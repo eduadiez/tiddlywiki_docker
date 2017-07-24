@@ -12,4 +12,4 @@ PORT=$2
 
 mkdir -p $DIR
 
-sudo docker run --rm --name $NAME -p $PORT:8080 -v $DIR:/usr/src/app/wiki -d eduadiez/tiddlywiki
+sudo docker run --rm --name $NAME -p $PORT:8080 -v $PWD/$DIR:/usr/src/app/wiki -d eduadiez/tiddlywiki
